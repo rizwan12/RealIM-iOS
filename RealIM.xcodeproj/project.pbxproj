@@ -13,6 +13,21 @@
 		7CDC25201BBEFFE4003461A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC251E1BBEFFE4003461A8 /* Main.storyboard */; };
 		7CDC25221BBEFFE5003461A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC25211BBEFFE5003461A8 /* Assets.xcassets */; };
 		7CDC25251BBEFFE5003461A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC25231BBEFFE5003461A8 /* LaunchScreen.storyboard */; };
+		7CDC252F1BBF1B88003461A8 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC252E1BBF1B88003461A8 /* ChatViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7CDC25341BBF21DD003461A8 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC25321BBF21DD003461A8 /* ChatCell.m */; settings = {ASSET_TAGS = (); }; };
+		7CDC25351BBF21DD003461A8 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDC25331BBF21DD003461A8 /* ChatCell.xib */; settings = {ASSET_TAGS = (); }; };
+		7CDC253B1BBF2A55003461A8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25391BBF2A55003461A8 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		7CDC253C1BBF2A55003461A8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC253A1BBF2A55003461A8 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		7CDC253E1BBF2A89003461A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC253D1BBF2A89003461A8 /* AudioToolbox.framework */; };
+		7CDC25401BBF2A8F003461A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC253F1BBF2A8F003461A8 /* CFNetwork.framework */; };
+		7CDC25421BBF2A98003461A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25411BBF2A98003461A8 /* CoreGraphics.framework */; };
+		7CDC25441BBF2A9E003461A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25431BBF2A9E003461A8 /* CoreLocation.framework */; };
+		7CDC25461BBF2AA7003461A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25451BBF2AA7003461A8 /* QuartzCore.framework */; };
+		7CDC25481BBF2AAC003461A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25471BBF2AAC003461A8 /* Security.framework */; };
+		7CDC254A1BBF2AB2003461A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC25491BBF2AB2003461A8 /* StoreKit.framework */; };
+		7CDC254C1BBF2ABB003461A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254B1BBF2ABB003461A8 /* SystemConfiguration.framework */; };
+		7CDC254E1BBF2AE5003461A8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254D1BBF2AE5003461A8 /* libsqlite3.tbd */; };
+		7CDC25501BBF2AF0003461A8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254F1BBF2AF0003461A8 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +41,24 @@
 		7CDC25211BBEFFE5003461A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CDC25241BBEFFE5003461A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CDC25261BBEFFE5003461A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDC252D1BBF1B88003461A8 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		7CDC252E1BBF1B88003461A8 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		7CDC25311BBF21DD003461A8 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		7CDC25321BBF21DD003461A8 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		7CDC25331BBF21DD003461A8 /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		7CDC25391BBF2A55003461A8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7CDC253A1BBF2A55003461A8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7CDC253D1BBF2A89003461A8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7CDC253F1BBF2A8F003461A8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7CDC25411BBF2A98003461A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7CDC25431BBF2A9E003461A8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7CDC25451BBF2AA7003461A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7CDC25471BBF2AAC003461A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7CDC25491BBF2AB2003461A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7CDC254B1BBF2ABB003461A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7CDC254D1BBF2AE5003461A8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7CDC254F1BBF2AF0003461A8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7CDC25511BBF2B86003461A8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +66,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDC25501BBF2AF0003461A8 /* libz.tbd in Frameworks */,
+				7CDC254E1BBF2AE5003461A8 /* libsqlite3.tbd in Frameworks */,
+				7CDC254C1BBF2ABB003461A8 /* SystemConfiguration.framework in Frameworks */,
+				7CDC254A1BBF2AB2003461A8 /* StoreKit.framework in Frameworks */,
+				7CDC25481BBF2AAC003461A8 /* Security.framework in Frameworks */,
+				7CDC25461BBF2AA7003461A8 /* QuartzCore.framework in Frameworks */,
+				7CDC25441BBF2A9E003461A8 /* CoreLocation.framework in Frameworks */,
+				7CDC25421BBF2A98003461A8 /* CoreGraphics.framework in Frameworks */,
+				7CDC25401BBF2A8F003461A8 /* CFNetwork.framework in Frameworks */,
+				7CDC253E1BBF2A89003461A8 /* AudioToolbox.framework in Frameworks */,
+				7CDC253C1BBF2A55003461A8 /* Parse.framework in Frameworks */,
+				7CDC253B1BBF2A55003461A8 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +87,7 @@
 		7CDC25091BBEFFE2003461A8 = {
 			isa = PBXGroup;
 			children = (
+				7CDC25381BBF2A1B003461A8 /* Frameworks */,
 				7CDC25141BBEFFE3003461A8 /* RealIM */,
 				7CDC25131BBEFFE3003461A8 /* Products */,
 			);
@@ -58,6 +104,8 @@
 		7CDC25141BBEFFE3003461A8 /* RealIM */ = {
 			isa = PBXGroup;
 			children = (
+				7CDC25301BBF21A1003461A8 /* ChatCell */,
+				7CDC252C1BBF1B59003461A8 /* ChatController */,
 				7CDC25181BBEFFE4003461A8 /* AppDelegate.h */,
 				7CDC25191BBEFFE4003461A8 /* AppDelegate.m */,
 				7CDC251B1BBEFFE4003461A8 /* ViewController.h */,
@@ -67,6 +115,7 @@
 				7CDC25231BBEFFE5003461A8 /* LaunchScreen.storyboard */,
 				7CDC25261BBEFFE5003461A8 /* Info.plist */,
 				7CDC25151BBEFFE4003461A8 /* Supporting Files */,
+				7CDC25511BBF2B86003461A8 /* Constants.h */,
 			);
 			path = RealIM;
 			sourceTree = "<group>";
@@ -77,6 +126,44 @@
 				7CDC25161BBEFFE4003461A8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CDC252C1BBF1B59003461A8 /* ChatController */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC252D1BBF1B88003461A8 /* ChatViewController.h */,
+				7CDC252E1BBF1B88003461A8 /* ChatViewController.m */,
+			);
+			name = ChatController;
+			sourceTree = "<group>";
+		};
+		7CDC25301BBF21A1003461A8 /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC25311BBF21DD003461A8 /* ChatCell.h */,
+				7CDC25321BBF21DD003461A8 /* ChatCell.m */,
+				7CDC25331BBF21DD003461A8 /* ChatCell.xib */,
+			);
+			name = ChatCell;
+			sourceTree = "<group>";
+		};
+		7CDC25381BBF2A1B003461A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC254F1BBF2AF0003461A8 /* libz.tbd */,
+				7CDC254D1BBF2AE5003461A8 /* libsqlite3.tbd */,
+				7CDC254B1BBF2ABB003461A8 /* SystemConfiguration.framework */,
+				7CDC25491BBF2AB2003461A8 /* StoreKit.framework */,
+				7CDC25471BBF2AAC003461A8 /* Security.framework */,
+				7CDC25451BBF2AA7003461A8 /* QuartzCore.framework */,
+				7CDC25431BBF2A9E003461A8 /* CoreLocation.framework */,
+				7CDC25411BBF2A98003461A8 /* CoreGraphics.framework */,
+				7CDC253F1BBF2A8F003461A8 /* CFNetwork.framework */,
+				7CDC253D1BBF2A89003461A8 /* AudioToolbox.framework */,
+				7CDC25391BBF2A55003461A8 /* Bolts.framework */,
+				7CDC253A1BBF2A55003461A8 /* Parse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDC25251BBEFFE5003461A8 /* LaunchScreen.storyboard in Resources */,
+				7CDC25351BBF21DD003461A8 /* ChatCell.xib in Resources */,
 				7CDC25221BBEFFE5003461A8 /* Assets.xcassets in Resources */,
 				7CDC25201BBEFFE4003461A8 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +239,8 @@
 			files = (
 				7CDC251D1BBEFFE4003461A8 /* ViewController.m in Sources */,
 				7CDC251A1BBEFFE4003461A8 /* AppDelegate.m in Sources */,
+				7CDC252F1BBF1B88003461A8 /* ChatViewController.m in Sources */,
+				7CDC25341BBF21DD003461A8 /* ChatCell.m in Sources */,
 				7CDC25171BBEFFE4003461A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RealIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizii.RealIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RealIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizii.RealIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +398,7 @@
 				7CDC252B1BBEFFE5003461A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
