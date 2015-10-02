@@ -87,7 +87,6 @@
 		7CDC25091BBEFFE2003461A8 = {
 			isa = PBXGroup;
 			children = (
-				7CDC25381BBF2A1B003461A8 /* Frameworks */,
 				7CDC25141BBEFFE3003461A8 /* RealIM */,
 				7CDC25131BBEFFE3003461A8 /* Products */,
 			);
@@ -104,6 +103,7 @@
 		7CDC25141BBEFFE3003461A8 /* RealIM */ = {
 			isa = PBXGroup;
 			children = (
+				7CDC25381BBF2A1B003461A8 /* Frameworks */,
 				7CDC25301BBF21A1003461A8 /* ChatCell */,
 				7CDC252C1BBF1B59003461A8 /* ChatController */,
 				7CDC25181BBEFFE4003461A8 /* AppDelegate.h */,
@@ -164,6 +164,7 @@
 				7CDC253A1BBF2A55003461A8 /* Parse.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
