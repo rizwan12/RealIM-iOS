@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChatObject.h"
 
 @interface ChatCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *chat;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+
+- (void) setChatObject:(ChatObject*)chatObject;
+- (void) setChatObjectWithImage:(ChatObject*)chatObject;
 
 @end

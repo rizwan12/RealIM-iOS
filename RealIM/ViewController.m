@@ -53,13 +53,14 @@
                                  style:UIAlertActionStyleDefault
                                  handler:^(UIAlertAction *action)
                                  {
-                                     NSLog(@"OK action");
                                      UITextField* nameField = alert.textFields.firstObject;
-                                     NSLog(@"Name is: %@", nameField.text);
-                                     NSString * storyboardName = @"Main";
-                                     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-                                     UIViewController * viewController = [storyboard instantiateViewControllerWithIdentifier:@"ChatViewController"];
-                                     [self.navigationController pushViewController:viewController animated:YES];
+                                     if([nameField.text length] > 0) {
+                                         NSString * storyboardName = @"Main";
+                                         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+                                         ChatViewController* viewController = [storyboard instantiateViewControllerWithIdentifier:@"ChatViewController"];
+                                         [viewController setName:nameField.text];
+                                         [self.navigationController pushViewController:viewController animated:YES];
+                                    }
                                      
                                  }];
     

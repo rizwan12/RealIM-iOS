@@ -28,6 +28,8 @@
 		7CDC254C1BBF2ABB003461A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254B1BBF2ABB003461A8 /* SystemConfiguration.framework */; };
 		7CDC254E1BBF2AE5003461A8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254D1BBF2AE5003461A8 /* libsqlite3.tbd */; };
 		7CDC25501BBF2AF0003461A8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC254F1BBF2AF0003461A8 /* libz.tbd */; };
+		7CDC25551BBF91EA003461A8 /* ChatObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC25541BBF91EA003461A8 /* ChatObject.m */; settings = {ASSET_TAGS = (); }; };
+		7CDC25591BC05887003461A8 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC25581BC05887003461A8 /* NetworkManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,10 @@
 		7CDC254D1BBF2AE5003461A8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		7CDC254F1BBF2AF0003461A8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7CDC25511BBF2B86003461A8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		7CDC25531BBF91EA003461A8 /* ChatObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatObject.h; sourceTree = "<group>"; };
+		7CDC25541BBF91EA003461A8 /* ChatObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatObject.m; sourceTree = "<group>"; };
+		7CDC25571BC05887003461A8 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		7CDC25581BC05887003461A8 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		7CDC25141BBEFFE3003461A8 /* RealIM */ = {
 			isa = PBXGroup;
 			children = (
+				7CDC25561BC05865003461A8 /* Utility */,
+				7CDC25521BBF91CE003461A8 /* ChatObject */,
 				7CDC25381BBF2A1B003461A8 /* Frameworks */,
 				7CDC25301BBF21A1003461A8 /* ChatCell */,
 				7CDC252C1BBF1B59003461A8 /* ChatController */,
@@ -167,6 +175,24 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		7CDC25521BBF91CE003461A8 /* ChatObject */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC25531BBF91EA003461A8 /* ChatObject.h */,
+				7CDC25541BBF91EA003461A8 /* ChatObject.m */,
+			);
+			name = ChatObject;
+			sourceTree = "<group>";
+		};
+		7CDC25561BC05865003461A8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC25571BC05887003461A8 /* NetworkManager.h */,
+				7CDC25581BC05887003461A8 /* NetworkManager.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,6 +224,7 @@
 				TargetAttributes = {
 					7CDC25111BBEFFE2003461A8 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 3GW33CRT93;
 					};
 				};
 			};
@@ -238,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDC25551BBF91EA003461A8 /* ChatObject.m in Sources */,
+				7CDC25591BC05887003461A8 /* NetworkManager.m in Sources */,
 				7CDC251D1BBEFFE4003461A8 /* ViewController.m in Sources */,
 				7CDC251A1BBEFFE4003461A8 /* AppDelegate.m in Sources */,
 				7CDC252F1BBF1B88003461A8 /* ChatViewController.m in Sources */,
@@ -352,6 +381,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -359,8 +390,9 @@
 				INFOPLIST_FILE = RealIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rizii.RealIM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riziii.RealIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c7de9790-84ad-49ea-8e32-c5eb7cff07b8";
 			};
 			name = Debug;
 		};
@@ -368,6 +400,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -375,8 +409,9 @@
 				INFOPLIST_FILE = RealIM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rizii.RealIM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riziii.RealIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c7de9790-84ad-49ea-8e32-c5eb7cff07b8";
 			};
 			name = Release;
 		};
